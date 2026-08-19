@@ -5,9 +5,16 @@ systems architecture, and AI-assisted engineering.
 
 Founder of **Invariant Engineering Group** and **LexLatam.ai**.
 
-Most of my current production engineering is in private repositories.
-GitHub's contribution graph above includes anonymized private-repository
-activity without exposing source code or repository details.
+Most of my current production engineering is maintained in private
+repositories. GitHub's contribution data below provides independently
+generated activity metrics without exposing proprietary source code or
+repository details.
+
+## Engineering activity
+
+<!-- activity:start -->
+Activity metrics update automatically.
+<!-- activity:end -->
 
 ## Selected engineering work
 
@@ -21,12 +28,6 @@ Selected public artifact:
 ### AI engineering tooling
 - `invariantengineering/skills` — reusable AI coding workflow skills.
 - `invariantengineering/audit-grill-me` — structured AI workflow assurance methodology.
-
-## Engineering activity
-
-<!-- activity:start -->
-Activity metrics update automatically.
-<!-- activity:end -->
 
 ## Earlier work
 

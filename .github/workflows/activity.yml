@@ -1,13 +1,16 @@
-name: Engineering activity
+name: Update engineering activity
 
 on:
   workflow_dispatch:
+  schedule:
+    # Every Monday at 12:17 UTC
+    - cron: "17 12 * * 1"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  test:
+  update:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,7 +22,21 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Test contribution query
+      - name: Update activity metrics
         env:
           ACTIVITY_TOKEN: ${{ secrets.ACTIVITY_TOKEN }}
-        run: python scripts/activity.py
+        run: python scripts/activity.py --write
+
+      - name: Commit updated metrics
+        run: |
+          if git diff --quiet; then
+            echo "Activity metrics have not changed."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+          git commit -m "chore: update engineering activity"
+          git push

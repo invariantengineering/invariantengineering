@@ -193,8 +193,6 @@ def row(name: str, stats: dict) -> str:
         f"| {stats['contributions']:,} "
         f"| {stats['commits']:,} "
         f"| {stats['prs']:,} "
-        f"| {stats['reviews']:,} "
-        f"| {stats['issues']:,} "
         f"| {stats['active_days']:,} "
         f"| {stats['repos']:,} |"
     )
@@ -206,14 +204,14 @@ def update_readme(
     timestamp: datetime,
 ) -> None:
     block = f"""<!-- activity:start -->
-### Trailing 365 days
+### Engineering activity — trailing 365 days
 
-| Scope | Contributions | Commits | PRs | Reviews | Issues | Active days | Repos |
-|---|---:|---:|---:|---:|---:|---:|---:|
-{row("All current work", all_stats)}
+| Scope | Contributions | Commits | PRs | Active days | Repos with commits |
+|---|---:|---:|---:|---:|---:|
+{row("All GitHub activity", all_stats)}
 {row("LexLatam.ai", lex_stats)}
 
-_Updated {timestamp.date().isoformat()} from GitHub contribution data. Private repository names, source code, commit messages, issue contents, and PR contents are not published._
+_Updated automatically from GitHub on {timestamp.date().isoformat()}. Most current production work is maintained in private repositories. These aggregate metrics expose activity volume without publishing private repository names, source code, commit messages, issue contents, or PR contents._
 <!-- activity:end -->"""
 
     path = Path("README.md")

@@ -44,23 +44,34 @@ def graphql(query: str, variables: dict) -> dict:
 
 
 def get_org_id(org_login: str) -> str:
-    data = graphql(
-        """
-        query($login: String!) {
-          organization(login: $login) {
-            id
-          }
-        }
-        """,
-        {"login": org_login},
+    """
+    Resolve the organization's public GraphQL node ID without using
+    ACTIVITY_TOKEN.
+
+    GitHub's public REST organization endpoint exposes `node_id`, which
+    is the same global node identifier accepted by GraphQL.
+    """
+    url = f"https://api.github.com/orgs/{org_login}"
+
+    request = urllib.request.Request(
+        url,
+        headers={
+            "Accept": "application/vnd.github+json",
+            "User-Agent": "invariant-public-activity",
+        },
     )
 
-    org = data.get("organization")
+    with urllib.request.urlopen(request) as response:
+        data = json.load(response)
 
-    if not org:
-        raise RuntimeError(f"Could not resolve organization: {org_login}")
+    node_id = data.get("node_id")
 
-    return org["id"]
+    if not node_id:
+        raise RuntimeError(
+            f"Could not resolve public node ID for organization: {org_login}"
+        )
+
+    return node_id
 
 
 def get_contributions(org_id: str) -> dict:

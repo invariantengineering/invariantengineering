@@ -1,16 +1,33 @@
-## Hi there 👋
+# Ian Hafkenschiel
 
-<!--
-**invariantengineering/invariantengineering** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Staff / Principal Software Engineer focused on production AI systems,
+systems architecture, and AI-assisted engineering.
 
-Here are some ideas to get you started:
+Founder of **Invariant Engineering Group** and **LexLatam.ai**.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Most of my current production engineering is in private repositories.
+GitHub's contribution graph above includes anonymized private-repository
+activity without exposing source code or repository details.
+
+## Selected engineering work
+
+### LexLatam.ai
+AI-assisted legal research and legal-data infrastructure for Panama.
+
+Selected public artifact:
+- `LexLatam-ai/lexlatam-taxonomy` — shared Python/TypeScript legal-document
+  taxonomy with generated bindings, schema validation, CI, and versioned releases.
+
+### AI engineering tooling
+- `invariantengineering/skills` — reusable AI coding workflow skills.
+- `invariantengineering/audit-grill-me` — structured AI workflow assurance methodology.
+
+## Engineering activity
+
+<!-- activity:start -->
+Activity metrics update automatically.
+<!-- activity:end -->
+
+## Earlier work
+
+My longer-running personal GitHub history is at `@ihafkenschiel`.

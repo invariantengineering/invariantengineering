@@ -13,7 +13,14 @@ repository details.
 ## Engineering activity
 
 <!-- activity:start -->
-Activity metrics update automatically.
+### Engineering activity — trailing 365 days
+
+| Scope | Contributions | Commits | PRs | Active days | Repos with commits |
+|---|---:|---:|---:|---:|---:|
+| All GitHub activity | 1,207 | 349 | 286 | 116 | 22 |
+| LexLatam.ai | 809 | 236 | 204 | 100 | 11 |
+
+_Updated automatically from GitHub on 2026-08-19. Most current production work is maintained in private repositories. These aggregate metrics expose activity volume without publishing private repository names, source code, commit messages, issue contents, or PR contents._
 <!-- activity:end -->
 
 ## Selected engineering work

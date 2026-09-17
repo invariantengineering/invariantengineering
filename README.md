@@ -5,10 +5,7 @@ systems architecture, and AI-assisted engineering.
 
 Founder of **Invariant Engineering Group** and **LexLatam.ai**.
 
-Most of my current production engineering is maintained in private
-repositories. GitHub's contribution data below provides independently
-generated activity metrics without exposing proprietary source code or
-repository details.
+Most of my current production engineering is in private repositories. The activity metrics below expose engineering volume without exposing proprietary code or repository details.
 
 ## Engineering activity
 
@@ -26,16 +23,23 @@ _Updated automatically from GitHub on 2026-09-14. Most current production work i
 ## Selected engineering work
 
 ### LexLatam.ai
+
 AI-assisted legal research and legal-data infrastructure for Panama.
 
-Selected public artifact:
-- `LexLatam-ai/lexlatam-taxonomy` — shared Python/TypeScript legal-document
-  taxonomy with generated bindings, schema validation, CI, and versioned releases.
+Selected public work and technical documentation:
+
+- **LexLatam MCP server** — designed and deployed a remote Model Context Protocol interface to LexLatam's legal-search service. The tool returns bounded, structured legal evidence for downstream agents rather than generating a second legal answer internally, keeping retrieval separate from client-side reasoning while leaving the proprietary backend private.
+  [Technical write-up](https://blog.lexlatam.ai/legaltech/servidor-mcp-lexlatam-derecho-panameno/)
+
+- **[LexLatam Voice Agent](https://github.com/invariantengineering/lexlatam-voice-agent)** · [Watch the demo](https://youtu.be/ARSjlUxTRd0) — focused Spanish-language realtime voice demo connecting OpenAI Realtime/WebRTC to the LexLatam MCP service. It exercises server-side tool execution, grounded legal retrieval, conversational interruption handling, and session lifecycle behavior without exposing the proprietary LexLatam backend.
+
+- **[lexlatam-taxonomy](https://github.com/LexLatam-ai/lexlatam-taxonomy)** — shared Python/TypeScript legal-document taxonomy with generated bindings, schema validation, CI, and versioned releases.
 
 ### AI engineering tooling
-- `invariantengineering/skills` — reusable AI coding workflow skills.
-- `invariantengineering/audit-grill-me` — structured AI workflow assurance methodology.
+
+- **[skills](https://github.com/invariantengineering/skills)** — reusable AI coding workflow skills.
+- **[audit-grill-me](https://github.com/invariantengineering/audit-grill-me)** — structured AI workflow assurance methodology.
 
 ## Earlier work
 
-My longer-running personal GitHub history is at `@ihafkenschiel`.
+My longer-running personal GitHub history is at [`@ihafkenschiel`](https://github.com/ihafkenschiel).

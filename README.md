@@ -14,10 +14,10 @@ Most of my current production engineering is in private repositories. The activi
 
 | Scope | Contributions | Commits | PRs | Active days | Repos with commits |
 |---|---:|---:|---:|---:|---:|
-| All GitHub activity | 1,789 | 574 | 521 | 151 | 26 |
-| LexLatam.ai | 1,178 | 376 | 355 | 135 | 12 |
+| All GitHub activity | 1,854 | 598 | 550 | 157 | 29 |
+| LexLatam.ai | 1,200 | 381 | 363 | 137 | 12 |
 
-_Updated automatically from GitHub on 2026-10-19. Most current production work is maintained in private repositories. These aggregate metrics expose activity volume without publishing private repository names, source code, commit messages, issue contents, or PR contents._
+_Updated automatically from GitHub on 2026-10-26. Most current production work is maintained in private repositories. These aggregate metrics expose activity volume without publishing private repository names, source code, commit messages, issue contents, or PR contents._
 <!-- activity:end -->
 
 ## Selected engineering work
